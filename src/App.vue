@@ -4,6 +4,11 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
+    <router-link to="/">Go to Home</router-link><br>
+    <router-link to="/test">Go to Test</router-link>
+  </div>
+  <router-view></router-view>
+  <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
