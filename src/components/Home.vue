@@ -32,7 +32,7 @@ const items = ref([{ cardTitle: 'Foo', cardBody: 'Bar' }, { cardTitle: 'Card Tit
     </div>
   </div>
 
-  <div class="bg-white rounded hover-shadow py-05 px-1">
+  <div class="bg-white rounded hover-shadow py-05 px-1 mt-1">
     <p class="m-0 black">See the current value of <strong><router-link :to="{ name: 'count', params: { count: count }}">Count</router-link></strong></p>
   </div>
 </template>
