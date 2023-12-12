@@ -13,26 +13,18 @@ const items = ref([{ cardTitle: 'Foo', cardBody: 'Bar' }, { cardTitle: 'Card Tit
       <div class="card p-1 hover-shadow bg-green rounded">
         <p><strong>{{ item.cardTitle }} - {{ index }}</strong></p>
         <p>{{ item.cardBody }}</p>
-        <p>The current value of <strong class="mono black">count</strong> is: <strong
-            class="mono black">{{ count }}</strong></p>
-        <button type="button" @click="count++" style="--button-border-color: var(--white);
-                --button-background: var(--white);
-                --button-color: var(--black);
-                --button-hover-color: var(--white);
-                --button-hover-background: var(--black);
-                --button-hover-border-color: var(--black);
-                --button-active-background: var(--black);
-                --button-active-border-color: var(--gray);
-          ">
-          Increase count
-        </button>
+
       </div>
     </div>
   </div>
 
   <div class="bg-white rounded hover-shadow py-05 px-1 mt-1">
     <p class="m-0 black">See the current value of <strong><router-link
-          :to="{ name: 'count', params: { count: count } }">Count</router-link></strong></p>
+          :to="{ name: 'count', params: { count: count } }">Count</router-link></strong> (<strong class="mono black">{{
+            count }}</strong>)</p>
+    <button type="button" @click="count++" class="m-0">
+      Increase count
+    </button>
   </div>
 </template>
 
