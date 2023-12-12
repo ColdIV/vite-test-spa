@@ -27,11 +27,16 @@ const count = ref(0)
         <li class="ml-1">
           <router-link to="/test">Test</router-link>
         </li>
+        <li class="ml-1">
+          <router-link to="/gitapi">GitApi</router-link>
+        </li>
       </ul>
     </nav>
   </header>
   <main class="py-1">
-    <router-view></router-view>
+    <Suspense>
+      <router-view></router-view>
+    </Suspense>
   </main>
   <Footer year="2023" />
 </template>

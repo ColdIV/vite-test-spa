@@ -10,7 +10,7 @@ const items = ref([{ cardTitle: 'Foo', cardBody: 'Bar' }, { cardTitle: 'Card Tit
 
   <div class="grid">
     <div v-for="(item, index) in items" class="cell-12 lg:cell-4 hover-lift">
-      <div class="card p-1 hover-shadow bg-blue rounded">
+      <div class="card p-1 hover-shadow bg-green rounded">
         <p><strong>{{item.cardTitle}} - {{index}}</strong></p>
         <p>{{item.cardBody}}</p>
         <p>The current value of <strong class="mono black">count</strong> is: <strong class="mono black">{{count}}</strong></p>
